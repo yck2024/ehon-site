@@ -83,10 +83,11 @@ p { margin: 0; }
 .store {
   display: inline-flex; flex-direction: column; align-items: flex-start; justify-content: center;
   min-width: 156px; min-height: 56px; padding: 8px 20px;
-  border: 1.5px dashed #b9ad97; border-radius: 16px;
+  border: 1.5px solid #b9ad97; border-radius: 16px;
   background: rgba(255, 253, 248, 0.8); color: var(--ink-soft);
-  font: inherit; line-height: 1.35; text-align: left; cursor: not-allowed;
+  font: inherit; line-height: 1.35; text-align: left;
 }
+.store:disabled { border-style: dashed; cursor: not-allowed; }
 .store b { font-size: 16px; color: var(--ink); }
 .store span { font-size: 13px; }
 
@@ -154,9 +155,6 @@ section.block.tint { background: var(--paper-2); }
 .faq dt::before { content: "Q"; color: var(--navy); }
 .faq dd::before { content: "A"; color: var(--red); }
 
-/* footer */
-.site-foot { padding: 40px 0 48px; text-align: center; color: var(--ink-soft); font-size: 14px; }
-
 :focus-visible { outline: 3px solid var(--navy); outline-offset: 3px; }
 
 @media (min-width: 760px) {
@@ -210,7 +208,7 @@ section.block.tint { background: var(--paper-2); }
     <div class="wrap split">
       <div>
         <h2 id="howto-title">つかいかた</h2>
-        <ol class="steps">
+        <ol class="steps" role="list">
           <li>
             <h3>えほんを えらぶ</h3>
             <p>ほんだなで、むりょうの「桃太郎」をひらきます。ほかのえほんは、一度きりのお買い上げで ひらきます（<a href="#price">りょうきん</a>）。</p>
@@ -235,7 +233,7 @@ section.block.tint { background: var(--paper-2); }
   <section class="block" id="why" aria-labelledby="why-title">
     <div class="wrap">
       <h2 id="why-title">えらばれる理由</h2>
-      <ul class="reasons">
+      <ul class="reasons" role="list">
         <li><strong>知っているお話だから、止まらない。</strong><span>筋を知っているので、英語がわからなくても最後まで聞けます。</span></li>
         <li><strong>広告なし。</strong><span>お子さまが触っても、知らない画面には行きません。</span></li>
         <li><strong>ネットがなくても読める。</strong><span>車の中でも、帰省先でも。</span></li>
@@ -261,7 +259,7 @@ section.block.tint { background: var(--paper-2); }
   <section class="block" id="apps" aria-labelledby="apps-title">
     <div class="wrap">
       <h2 id="apps-title">どのアプリ？</h2>
-      <ul class="apps">
+      <ul class="apps" role="list">
         <li><b>日本の昔ばなし（日本語と英語）</b><span>日本のご家庭向け</span></li>
         <li><b>日本の昔ばなし（中文と日本語）</b><span>台湾のご家庭向け</span></li>
         <li><b>台灣故事繪本</b><span>虎姑婆など、台湾のお話</span></li>
@@ -292,12 +290,6 @@ section.block.tint { background: var(--paper-2); }
   </section>
 
 </main>
-
-<footer class="site-foot">
-  <div class="wrap">
-    <p>むかしばなし えほん</p>
-  </div>
-</footer>
 
 </body>
 </html>

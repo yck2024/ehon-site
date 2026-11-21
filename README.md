@@ -24,8 +24,14 @@ top of the same file (`<title>`, `description`, `og:title`,
 `og:description`).
 
 The store buttons at the top are disabled and read まもなく公開 until the
-apps are released. To make one live, replace its `<button ... disabled>`
-with a link to the store page (`<a class="store" href="...">`).
+apps are released. When a listing goes live, replace that store's entire
+`<button>` with the matching link below, using the published listing URL.
+Leave the other button unchanged until its listing is live.
+
+```html
+<a class="store" href="APP_STORE_URL"><b>App Store</b></a>
+<a class="store" href="GOOGLE_PLAY_URL"><b>Google Play</b></a>
+```
 
 ## Preview locally
 
