@@ -22,14 +22,14 @@ text in place; each sentence sits on its own line, so a wording edit is a
 one-line change. The page title and description are in the `<head>` at the
 top of the same file (`<title>` and `description`).
 
-The store buttons at the top are disabled and read まもなく公開 until the
-apps are released. When a listing goes live, replace that store's entire
-`<button>` with the matching link below, using the published listing URL.
-Leave the other button unchanged until its listing is live.
+The two store buttons at the top are for the Japanese–English edition.
+Each stays disabled and reads まもなく公開 until that edition is listed on
+its store. Replace only that store's entire `<button>` with the matching
+link below, using the published listing URL.
 
 ```html
-<a class="store" href="APP_STORE_URL"><b>App Store</b></a>
-<a class="store" href="GOOGLE_PLAY_URL"><b>Google Play</b></a>
+<a class="store" href="JA_EN_APP_STORE_URL"><b>App Store</b></a>
+<a class="store" href="JA_EN_GOOGLE_PLAY_URL"><b>Google Play</b></a>
 ```
 
 ## Preview locally
