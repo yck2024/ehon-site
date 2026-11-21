@@ -23,7 +23,7 @@ screenshot, replace the matching image in `public/img/` and revise its
 `alt` text as needed. For example, a price change affects the pricing
 paragraph, the `unlock-screen.webp` screenshot, and its `alt` text.
 
-The two store buttons at the top are for えいごで むかしばなし えほん.
+The two store buttons at the top are for this Japanese–English app.
 Each stays disabled and reads まもなく公開 until the app is listed on
 that store. Replace only that store's entire `<button>` with the matching
 link below, using the published listing URL.
