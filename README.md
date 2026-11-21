@@ -1,7 +1,7 @@
 # ehon-site
 
-How-to-use page for the picture-book storybook apps, served at
-<https://ehon.kengblog.com/> (Japanese).
+This Japanese how-to-use page for the storybook apps will be served at
+<https://ehon.kengblog.com/> once published.
 
 It is a plain static site: no framework, no build step, no trackers,
 no web fonts.
@@ -10,10 +10,8 @@ no web fonts.
 public/
   index.html      the whole page; all wording lives here
   img/*.webp      app screenshots shown in the phone frames
-  og.jpg          share-preview image (1200x630, no text on it)
   favicon.svg
   _headers        response headers for Cloudflare static assets
-tools/og.html     source for og.jpg
 wrangler.jsonc    Cloudflare Worker config (static assets + custom domain)
 ```
 
@@ -25,10 +23,9 @@ one-line change. The page title and share text are in the `<head>` at the
 top of the same file (`<title>`, `description`, `og:title`,
 `og:description`).
 
-The store buttons are disabled and read まもなく公開 until the apps are
-released. To make one live, replace its `<button ... disabled>` with a
-link to the store page (`<a class="store" href="...">`), in both the top
-section and the footer.
+The store buttons at the top are disabled and read まもなく公開 until the
+apps are released. To make one live, replace its `<button ... disabled>`
+with a link to the store page (`<a class="store" href="...">`).
 
 ## Preview locally
 
@@ -53,10 +50,3 @@ npx wrangler@4 deploy
 ```
 
 After the deploy, check <https://ehon.kengblog.com/>.
-
-## Share image
-
-`public/og.jpg` is a screenshot of `tools/og.html` at 1200x630. It has no
-text on it, so wording changes never make it stale. To rebuild it after
-the app screenshots change, open `tools/og.html` in a browser with a
-1200x630 window and save a screenshot over `public/og.jpg`.

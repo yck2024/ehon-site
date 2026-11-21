@@ -19,11 +19,7 @@
 <meta property="og:url" content="https://ehon.kengblog.com/">
 <meta property="og:title" content="むかしばなし えほん｜知っている昔ばなしで、英語を聞く。">
 <meta property="og:description" content="桃太郎、かぐや姫、浦島太郎。お子さまがもう知っているお話だから、英語でも「わかる」が続きます。">
-<meta property="og:image" content="https://ehon.kengblog.com/og.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="むかしばなし えほん アプリの画面">
-<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:card" content="summary">
 <style>
 :root {
   --paper: #fbf6ec;
@@ -78,6 +74,7 @@ p { margin: 0; }
   mask-image: linear-gradient(to bottom, transparent 0%, #000 70%);
 }
 .hero-grid { display: grid; gap: 36px; align-items: center; }
+.edition { margin-bottom: 8px; font-size: 14px; color: var(--ink-soft); }
 .hero h1 { font-size: clamp(28px, 7.4vw, 46px); color: var(--navy); letter-spacing: 0.04em; }
 .hero h1 .accent { color: var(--red); }
 .lead { margin-top: 18px; font-size: 18px; color: var(--ink-soft); max-width: 30em; }
@@ -107,7 +104,6 @@ p { margin: 0; }
 section.block { padding: 64px 0; }
 section.block.tint { background: var(--paper-2); }
 .block h2 { font-size: clamp(24px, 6vw, 32px); color: var(--navy); margin-bottom: 28px; }
-.block h2 small { font-size: 0.6em; color: var(--ink-soft); font-weight: 700; }
 .split { display: grid; gap: 40px; align-items: center; }
 
 /* how-to steps */
@@ -160,7 +156,6 @@ section.block.tint { background: var(--paper-2); }
 
 /* footer */
 .site-foot { padding: 40px 0 48px; text-align: center; color: var(--ink-soft); font-size: 14px; }
-.site-foot .stores { justify-content: center; margin-top: 16px; }
 
 :focus-visible { outline: 3px solid var(--navy); outline-offset: 3px; }
 
@@ -195,6 +190,7 @@ section.block.tint { background: var(--paper-2); }
   <section class="hero">
     <div class="wrap hero-grid">
       <div>
+        <p class="edition">このページでは、日本語・英語版のつかいかたと料金をご案内します。</p>
         <h1>知っている昔ばなしで、<span class="accent">英語を聞く。</span></h1>
         <p class="lead">桃太郎、かぐや姫、浦島太郎。お子さまがもう知っているお話だから、英語でも「わかる」が続きます。</p>
         <!-- ストアのボタン：アプリ公開まではリンクにしない -->
@@ -204,7 +200,7 @@ section.block.tint { background: var(--paper-2); }
         </div>
       </div>
       <div class="phone">
-        <img src="/img/shelf.webp" width="560" height="1218" alt="アプリの本だな画面。桃太郎などの昔ばなしが並んでいます" fetchpriority="high">
+        <img src="/img/shelf.webp" width="560" height="1218" alt="アプリの本だな画面。桃太郎は無料で、ほかの昔ばなしにはロックがかかっています" fetchpriority="high">
       </div>
     </div>
   </section>
@@ -213,11 +209,11 @@ section.block.tint { background: var(--paper-2); }
   <section class="block tint" id="howto" aria-labelledby="howto-title">
     <div class="wrap split">
       <div>
-        <h2 id="howto-title">つかいかた<small>（3ステップ）</small></h2>
+        <h2 id="howto-title">つかいかた</h2>
         <ol class="steps">
           <li>
             <h3>えほんを えらぶ</h3>
-            <p>ほんだなから、すきな昔ばなしを ひとつ。さいしょの1さつは むりょうです。</p>
+            <p>ほんだなで、むりょうの「桃太郎」をひらきます。ほかのえほんは、一度きりのお買い上げで ひらきます（<a href="#price">りょうきん</a>）。</p>
           </li>
           <li>
             <h3>きいて、いっしょに よむ</h3>
@@ -300,10 +296,6 @@ section.block.tint { background: var(--paper-2); }
 <footer class="site-foot">
   <div class="wrap">
     <p>むかしばなし えほん</p>
-    <div class="stores">
-      <button class="store" type="button" disabled aria-disabled="true"><b>App Store</b><span>まもなく公開</span></button>
-      <button class="store" type="button" disabled aria-disabled="true"><b>Google Play</b><span>まもなく公開</span></button>
-    </div>
   </div>
 </footer>
 
