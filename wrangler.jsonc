@@ -1,0 +1,12 @@
+// Cloudflare Worker that serves the static files in ./public.
+// No Worker script: the whole site is static assets.
+{
+  "name": "ehon-site",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./public"
+  },
+  "routes": [
+    { "pattern": "ehon.kengblog.com", "custom_domain": true }
+  ]
+}
