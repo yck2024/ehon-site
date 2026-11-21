@@ -19,9 +19,8 @@ wrangler.jsonc    Cloudflare Worker config (static assets + custom domain)
 
 Every piece of page text is in `public/index.html`. Change the Japanese
 text in place; each sentence sits on its own line, so a wording edit is a
-one-line change. The page title and share text are in the `<head>` at the
-top of the same file (`<title>`, `description`, `og:title`,
-`og:description`).
+one-line change. The page title and description are in the `<head>` at the
+top of the same file (`<title>` and `description`).
 
 The store buttons at the top are disabled and read まもなく公開 until the
 apps are released. When a listing goes live, replace that store's entire

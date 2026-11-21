@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-  ページの文言はすべてこのファイルの中にあります（<head> の title / description / og:* も含む）。
+  ページの文言はすべてこのファイルの中にあります（<head> の title / description も含む）。
   文言を直すときは、該当する行の日本語だけを書き換えてください。
   All page text lives in this file. Edit the Japanese text in place; no build step.
 -->
@@ -13,13 +13,6 @@
 <link rel="canonical" href="https://ehon.kengblog.com/">
 <meta name="theme-color" content="#fbf6ec">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<meta property="og:type" content="website">
-<meta property="og:locale" content="ja_JP">
-<meta property="og:site_name" content="むかしばなし えほん">
-<meta property="og:url" content="https://ehon.kengblog.com/">
-<meta property="og:title" content="むかしばなし えほん｜知っている昔ばなしで、英語を聞く。">
-<meta property="og:description" content="桃太郎、かぐや姫、浦島太郎。お子さまがもう知っているお話だから、英語でも「わかる」が続きます。">
-<meta name="twitter:card" content="summary">
 <style>
 :root {
   --paper: #fbf6ec;
@@ -175,7 +168,7 @@ section.block.tint { background: var(--paper-2); }
 
 <header class="site-head">
   <div class="wrap">
-    <a class="brand" href="/" aria-label="むかしばなし えほん トップ">
+    <a class="brand" href="/">
       <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" fill="#26386a"/><circle cx="32" cy="30" r="13" fill="#c9472f"/><path d="M0 44c8-6 16-6 24 0s16 6 24 0 12-5 16-3v23H0z" fill="#fbf6ec"/><path d="M0 52c8-6 16-6 24 0s16 6 24 0 12-5 16-3" fill="none" stroke="#26386a" stroke-width="2.5"/></svg>
       むかしばなし えほん
     </a>
@@ -193,8 +186,8 @@ section.block.tint { background: var(--paper-2); }
         <p class="lead">桃太郎、かぐや姫、浦島太郎。お子さまがもう知っているお話だから、英語でも「わかる」が続きます。</p>
         <!-- ストアのボタン：アプリ公開まではリンクにしない -->
         <div class="stores">
-          <button class="store" type="button" disabled aria-disabled="true"><b>App Store</b><span>まもなく公開</span></button>
-          <button class="store" type="button" disabled aria-disabled="true"><b>Google Play</b><span>まもなく公開</span></button>
+          <button class="store" type="button" disabled><b>App Store</b><span>まもなく公開</span></button>
+          <button class="store" type="button" disabled><b>Google Play</b><span>まもなく公開</span></button>
         </div>
       </div>
       <div class="phone">
@@ -262,7 +255,7 @@ section.block.tint { background: var(--paper-2); }
       <ul class="apps" role="list">
         <li><b>日本の昔ばなし（日本語と英語）</b><span>日本のご家庭向け</span></li>
         <li><b>日本の昔ばなし（中文と日本語）</b><span>台湾のご家庭向け</span></li>
-        <li><b>台灣故事繪本</b><span>虎姑婆など、台湾のお話</span></li>
+        <li><b lang="zh-TW">台灣故事繪本</b><span><span lang="zh-TW">虎姑婆</span>など、台湾のお話</span></li>
         <li><b>せかいのおはなし（英語）</b><span>ウサギとカメ ほか</span></li>
       </ul>
     </div>
