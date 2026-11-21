@@ -1,7 +1,7 @@
 # ehon-site
 
-This Japanese how-to-use page for the storybook apps will be served at
-<https://ehon.kengblog.com/> once published.
+This Japanese how-to-use page for the app えいごで むかしばなし えほん
+will be served at <https://ehon.kengblog.com/> once published.
 
 It is a plain static site: no framework, no build step, no trackers,
 no web fonts.
@@ -23,14 +23,14 @@ screenshot, replace the matching image in `public/img/` and revise its
 `alt` text as needed. For example, a price change affects the pricing
 paragraph, the `unlock-screen.webp` screenshot, and its `alt` text.
 
-The two store buttons at the top are for the Japanese–English edition.
-Each stays disabled and reads まもなく公開 until that edition is listed on
-its store. Replace only that store's entire `<button>` with the matching
+The two store buttons at the top are for えいごで むかしばなし えほん.
+Each stays disabled and reads まもなく公開 until the app is listed on
+that store. Replace only that store's entire `<button>` with the matching
 link below, using the published listing URL.
 
 ```html
-<a class="store" href="JA_EN_APP_STORE_URL"><b>App Store</b></a>
-<a class="store" href="JA_EN_GOOGLE_PLAY_URL"><b>Google Play</b></a>
+<a class="store" href="APP_STORE_URL"><b>App Store</b></a>
+<a class="store" href="GOOGLE_PLAY_URL"><b>Google Play</b></a>
 ```
 
 ## Preview locally
