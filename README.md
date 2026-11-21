@@ -8,7 +8,7 @@ no web fonts.
 
 ```
 public/
-  index.html      the whole page; all wording lives here
+  index.html      landing page
   img/*.webp      app screenshots shown in the phone frames
   favicon.svg
   _headers        response headers for Cloudflare static assets
@@ -17,10 +17,11 @@ wrangler.jsonc    Cloudflare Worker config (static assets + custom domain)
 
 ## Editing the wording
 
-Every piece of page text is in `public/index.html`. Change the Japanese
-text in place; each sentence sits on its own line, so a wording edit is a
-one-line change. The page title and description are in the `<head>` at the
-top of the same file (`<title>` and `description`).
+Edit the Japanese copy in `public/index.html`, including the page title
+and meta description in `<head>`. If a change affects text shown in a
+screenshot, replace the matching image in `public/img/` and revise its
+`alt` text as needed. For example, a price change affects the pricing
+paragraph, the `unlock-screen.webp` screenshot, and its `alt` text.
 
 The two store buttons at the top are for the Japanese–English edition.
 Each stays disabled and reads まもなく公開 until that edition is listed on
