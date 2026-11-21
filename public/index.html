@@ -1,0 +1,311 @@
+<!doctype html>
+<!--
+  ページの文言はすべてこのファイルの中にあります（<head> の title / description / og:* も含む）。
+  文言を直すときは、該当する行の日本語だけを書き換えてください。
+  All page text lives in this file. Edit the Japanese text in place; no build step.
+-->
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>むかしばなし えほん｜知っている昔ばなしで、英語を聞く。</title>
+<meta name="description" content="桃太郎、かぐや姫、浦島太郎。お子さまがもう知っているお話だから、英語でも「わかる」が続きます。">
+<link rel="canonical" href="https://ehon.kengblog.com/">
+<meta name="theme-color" content="#fbf6ec">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:site_name" content="むかしばなし えほん">
+<meta property="og:url" content="https://ehon.kengblog.com/">
+<meta property="og:title" content="むかしばなし えほん｜知っている昔ばなしで、英語を聞く。">
+<meta property="og:description" content="桃太郎、かぐや姫、浦島太郎。お子さまがもう知っているお話だから、英語でも「わかる」が続きます。">
+<meta property="og:image" content="https://ehon.kengblog.com/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="むかしばなし えほん アプリの画面">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+:root {
+  --paper: #fbf6ec;
+  --paper-2: #f4ecdc;
+  --card: #fffdf8;
+  --line: #e8dcc4;
+  --ink: #2b2a33;
+  --ink-soft: #5d5a66;
+  --navy: #26386a;
+  --red: #c9472f;
+  --green: #3e7a4d;
+  --radius: 22px;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Hiragino Maru Gothic ProN", "Hiragino Maru Gothic Pro", "BIZ UDPGothic", "Hiragino Sans", "Noto Sans JP", "Yu Gothic", Meiryo, system-ui, sans-serif;
+  font-size: 17px;
+  line-height: 1.85;
+  letter-spacing: 0.02em;
+  line-break: strict;
+  word-break: auto-phrase;
+}
+img { max-width: 100%; height: auto; }
+h1, h2, h3 { line-height: 1.45; margin: 0; font-weight: 700; }
+p { margin: 0; }
+.wrap { width: 100%; max-width: 1040px; margin: 0 auto; padding: 0 20px; }
+
+/* ---------- header ---------- */
+.site-head { padding: 18px 0 0; }
+.brand { display: inline-flex; align-items: center; gap: 10px; font-weight: 700; color: var(--navy); font-size: 18px; text-decoration: none; }
+.brand svg { width: 36px; height: 36px; border-radius: 9px; flex: none; }
+
+/* ---------- hero ---------- */
+.hero { position: relative; overflow: hidden; padding: 28px 0 56px; }
+.hero::before {
+  /* seigaiha (青海波) wave pattern, fading out toward the top */
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background-color: var(--paper-2);
+  background-image:
+    radial-gradient(circle at 100% 150%, var(--paper-2) 24%, var(--paper) 24%, var(--paper) 28%, var(--paper-2) 28%, var(--paper-2) 36%, var(--paper) 36%, var(--paper) 40%, transparent 40%, transparent),
+    radial-gradient(circle at 0 150%, var(--paper-2) 24%, var(--paper) 24%, var(--paper) 28%, var(--paper-2) 28%, var(--paper-2) 36%, var(--paper) 36%, var(--paper) 40%, transparent 40%, transparent),
+    radial-gradient(circle at 50% 100%, var(--paper) 10%, var(--paper-2) 10%, var(--paper-2) 23%, var(--paper) 23%, var(--paper) 30%, var(--paper-2) 30%, var(--paper-2) 43%, var(--paper) 43%, var(--paper) 50%, var(--paper-2) 50%, var(--paper-2) 63%, var(--paper) 63%, var(--paper) 71%, transparent 71%, transparent),
+    radial-gradient(circle at 100% 50%, var(--paper) 5%, var(--paper-2) 5%, var(--paper-2) 15%, var(--paper) 15%, var(--paper) 20%, var(--paper-2) 20%, var(--paper-2) 29%, var(--paper) 29%, var(--paper) 34%, var(--paper-2) 34%, var(--paper-2) 44%, var(--paper) 44%, var(--paper) 49%, transparent 49%, transparent),
+    radial-gradient(circle at 0 50%, var(--paper) 5%, var(--paper-2) 5%, var(--paper-2) 15%, var(--paper) 15%, var(--paper) 20%, var(--paper-2) 20%, var(--paper-2) 29%, var(--paper) 29%, var(--paper) 34%, var(--paper-2) 34%, var(--paper-2) 44%, var(--paper) 44%, var(--paper) 49%, transparent 49%, transparent);
+  background-size: 64px 32px;
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 70%);
+  mask-image: linear-gradient(to bottom, transparent 0%, #000 70%);
+}
+.hero-grid { display: grid; gap: 36px; align-items: center; }
+.hero h1 { font-size: clamp(28px, 7.4vw, 46px); color: var(--navy); letter-spacing: 0.04em; }
+.hero h1 .accent { color: var(--red); }
+.lead { margin-top: 18px; font-size: 18px; color: var(--ink-soft); max-width: 30em; }
+
+.stores { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+.store {
+  display: inline-flex; flex-direction: column; align-items: flex-start; justify-content: center;
+  min-width: 156px; min-height: 56px; padding: 8px 20px;
+  border: 1.5px dashed #b9ad97; border-radius: 16px;
+  background: rgba(255, 253, 248, 0.8); color: var(--ink-soft);
+  font: inherit; line-height: 1.35; text-align: left; cursor: not-allowed;
+}
+.store b { font-size: 16px; color: var(--ink); }
+.store span { font-size: 13px; }
+
+/* ---------- phone frame ---------- */
+.phone {
+  width: min(250px, 66vw); margin: 0 auto;
+  padding: 9px; border-radius: 44px;
+  background: #22263a;
+  box-shadow: 0 2px 0 #3a3f58 inset, 0 24px 48px -18px rgba(38, 56, 106, 0.45), 0 6px 14px rgba(43, 42, 51, 0.12);
+}
+.phone img { display: block; width: 100%; height: auto; aspect-ratio: 560 / 1218; border-radius: 35px; background: var(--paper-2); }
+.hero .phone { transform: rotate(2deg); }
+
+/* ---------- sections ---------- */
+section.block { padding: 64px 0; }
+section.block.tint { background: var(--paper-2); }
+.block h2 { font-size: clamp(24px, 6vw, 32px); color: var(--navy); margin-bottom: 28px; }
+.block h2 small { font-size: 0.6em; color: var(--ink-soft); font-weight: 700; }
+.split { display: grid; gap: 40px; align-items: center; }
+
+/* how-to steps */
+.steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 16px; counter-reset: step; }
+.steps li {
+  counter-increment: step; position: relative;
+  background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 20px 20px 20px 72px;
+}
+.steps li::before {
+  content: counter(step);
+  position: absolute; left: 20px; top: 20px;
+  width: 42px; height: 42px; border-radius: 50%;
+  display: grid; place-items: center;
+  background: var(--red); color: #fff; font-weight: 700; font-size: 20px; line-height: 1;
+}
+.steps li:nth-child(2)::before { background: var(--navy); }
+.steps li:nth-child(3)::before { background: var(--green); }
+.steps h3 { font-size: 20px; color: var(--ink); margin-bottom: 4px; }
+.steps p { color: var(--ink-soft); }
+
+/* reasons */
+.reasons { list-style: none; margin: 0; padding: 0; display: grid; gap: 16px; }
+.reasons li { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px 22px 22px 24px; border-top: 5px solid var(--red); }
+.reasons li:nth-child(2) { border-top-color: var(--navy); }
+.reasons li:nth-child(3) { border-top-color: var(--green); }
+.reasons li:nth-child(4) { border-top-color: #d49a2a; }
+.reasons strong { display: block; font-size: 19px; color: var(--ink); margin-bottom: 6px; }
+.reasons span { color: var(--ink-soft); }
+
+/* pricing */
+.price-text { font-size: 19px; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; }
+.price-text strong { color: var(--red); }
+
+/* apps */
+.apps { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.apps li { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 16px 20px; display: flex; flex-direction: column; gap: 2px; }
+.apps b { color: var(--navy); }
+.apps span { color: var(--ink-soft); font-size: 15px; }
+
+/* faq */
+.faq { display: grid; gap: 12px; margin: 0; }
+.faq > div { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 18px 20px; }
+.faq dt, .faq dd { position: relative; padding-left: 34px; margin: 0; }
+.faq dt { font-weight: 700; }
+.faq dd { color: var(--ink-soft); margin-top: 6px; }
+.faq dt::before, .faq dd::before { position: absolute; left: 0; top: 0; font-weight: 700; }
+.faq dt::before { content: "Q"; color: var(--navy); }
+.faq dd::before { content: "A"; color: var(--red); }
+
+/* footer */
+.site-foot { padding: 40px 0 48px; text-align: center; color: var(--ink-soft); font-size: 14px; }
+.site-foot .stores { justify-content: center; margin-top: 16px; }
+
+:focus-visible { outline: 3px solid var(--navy); outline-offset: 3px; }
+
+@media (min-width: 760px) {
+  body { font-size: 18px; }
+  .hero { padding: 40px 0 80px; }
+  .hero-grid { grid-template-columns: 1.15fr 0.85fr; gap: 48px; }
+  .phone { width: 260px; }
+  section.block { padding: 88px 0; }
+  .split { grid-template-columns: 1.2fr 0.8fr; gap: 56px; }
+  .split.flip { grid-template-columns: 0.8fr 1.2fr; }
+  .split.flip > .phone { order: -1; }
+  .reasons { grid-template-columns: 1fr 1fr; gap: 20px; }
+  .apps { grid-template-columns: 1fr 1fr; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="むかしばなし えほん トップ">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" fill="#26386a"/><circle cx="32" cy="30" r="13" fill="#c9472f"/><path d="M0 44c8-6 16-6 24 0s16 6 24 0 12-5 16-3v23H0z" fill="#fbf6ec"/><path d="M0 52c8-6 16-6 24 0s16 6 24 0 12-5 16-3" fill="none" stroke="#26386a" stroke-width="2.5"/></svg>
+      むかしばなし えほん
+    </a>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===== Top ===== -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1>知っている昔ばなしで、<span class="accent">英語を聞く。</span></h1>
+        <p class="lead">桃太郎、かぐや姫、浦島太郎。お子さまがもう知っているお話だから、英語でも「わかる」が続きます。</p>
+        <!-- ストアのボタン：アプリ公開まではリンクにしない -->
+        <div class="stores">
+          <button class="store" type="button" disabled aria-disabled="true"><b>App Store</b><span>まもなく公開</span></button>
+          <button class="store" type="button" disabled aria-disabled="true"><b>Google Play</b><span>まもなく公開</span></button>
+        </div>
+      </div>
+      <div class="phone">
+        <img src="/img/shelf.webp" width="560" height="1218" alt="アプリの本だな画面。桃太郎などの昔ばなしが並んでいます" fetchpriority="high">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== つかいかた ===== -->
+  <section class="block tint" id="howto" aria-labelledby="howto-title">
+    <div class="wrap split">
+      <div>
+        <h2 id="howto-title">つかいかた<small>（3ステップ）</small></h2>
+        <ol class="steps">
+          <li>
+            <h3>えほんを えらぶ</h3>
+            <p>ほんだなから、すきな昔ばなしを ひとつ。さいしょの1さつは むりょうです。</p>
+          </li>
+          <li>
+            <h3>きいて、いっしょに よむ</h3>
+            <p>一文ずつ、ゆっくり読み上げます。絵を見ながら、日本語と英語を行き来できます。</p>
+          </li>
+          <li>
+            <h3>おうちの人の声で よむ</h3>
+            <p>「おとなのへや」で、お父さん・お母さんの声を録音できます。寝る前は、いつもの声で。</p>
+          </li>
+        </ol>
+      </div>
+      <div class="phone">
+        <img src="/img/book-page.webp" width="560" height="1218" alt="えほんを読む画面。絵の下に日本語と英語の文があり、読み上げボタンがあります" loading="lazy" decoding="async">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== えらばれる理由 ===== -->
+  <section class="block" id="why" aria-labelledby="why-title">
+    <div class="wrap">
+      <h2 id="why-title">えらばれる理由</h2>
+      <ul class="reasons">
+        <li><strong>知っているお話だから、止まらない。</strong><span>筋を知っているので、英語がわからなくても最後まで聞けます。</span></li>
+        <li><strong>広告なし。</strong><span>お子さまが触っても、知らない画面には行きません。</span></li>
+        <li><strong>ネットがなくても読める。</strong><span>車の中でも、帰省先でも。</span></li>
+        <li><strong>一度のお買い上げで、ずっと。</strong><span>月額はありません。</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== りょうきん ===== -->
+  <section class="block tint" id="price" aria-labelledby="price-title">
+    <div class="wrap split flip">
+      <div>
+        <h2 id="price-title">りょうきん</h2>
+        <p class="price-text"><strong>さいしょの1さつは無料。</strong>ぜんぶで8さつ、<strong>¥800</strong>の一度きりのお買い上げで、のこりの7さつがひらきます。</p>
+      </div>
+      <div class="phone">
+        <img src="/img/unlock-screen.webp" width="560" height="1218" alt="ぜんぶのえほんをひらく画面。¥800の一度きりのお買い上げと、購入を復元するボタン" loading="lazy" decoding="async">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== どのアプリ？ ===== -->
+  <section class="block" id="apps" aria-labelledby="apps-title">
+    <div class="wrap">
+      <h2 id="apps-title">どのアプリ？</h2>
+      <ul class="apps">
+        <li><b>日本の昔ばなし（日本語と英語）</b><span>日本のご家庭向け</span></li>
+        <li><b>日本の昔ばなし（中文と日本語）</b><span>台湾のご家庭向け</span></li>
+        <li><b>台灣故事繪本</b><span>虎姑婆など、台湾のお話</span></li>
+        <li><b>せかいのおはなし（英語）</b><span>ウサギとカメ ほか</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== よくある質問 ===== -->
+  <section class="block tint" id="faq" aria-labelledby="faq-title">
+    <div class="wrap">
+      <h2 id="faq-title">よくある質問</h2>
+      <dl class="faq">
+        <div>
+          <dt>何歳から使えますか。</dt>
+          <dd>読み聞かせができる年齢から。ひとりで触るなら3歳ごろからが目安です。</dd>
+        </div>
+        <div>
+          <dt>親の英語が苦手でも大丈夫ですか。</dt>
+          <dd>大丈夫です。読み上げはアプリがします。</dd>
+        </div>
+        <div>
+          <dt>買ったあと、機種を変えたら？</dt>
+          <dd>「購入を復元する」で元に戻せます。</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <p>むかしばなし えほん</p>
+    <div class="stores">
+      <button class="store" type="button" disabled aria-disabled="true"><b>App Store</b><span>まもなく公開</span></button>
+      <button class="store" type="button" disabled aria-disabled="true"><b>Google Play</b><span>まもなく公開</span></button>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
