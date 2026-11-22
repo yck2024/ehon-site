@@ -28,9 +28,9 @@ paragraph, the `unlock-screen.webp` screenshot, and its `alt` text.
 
 `public/privacy.html` is the public copy of the privacy page shipped
 inside the app. When the app's page changes, carry the same meaning over
-here; only the contact line differs, pointing to support@kengblog.com
-instead of the App Store listing. The page footer links the top page,
-the privacy policy, and the support page; keep it the same on all three.
+here, keeping support@kengblog.com as the public contact instead of the
+App Store listing. The landing page footer links to both the privacy
+policy and support; each of those pages links to the other in its footer.
 
 The two store buttons at the top are for this Japanese–English app.
 Each stays disabled and reads まもなく公開 until the app is listed on
@@ -48,8 +48,10 @@ link below, using the published listing URL.
 npx wrangler@4 dev
 ```
 
-Then open <http://localhost:8787/>. Any static file server pointed at
-`public/` works too.
+Then open <http://localhost:8787/>. A basic static file server pointed at
+`public/` can preview the landing page, but `/privacy` and `/support`
+require Wrangler or another server that serves `.html` files at
+extensionless URLs.
 
 ## Publish
 
