@@ -1,7 +1,8 @@
 # ehon-site
 
 This Japanese how-to-use page for the app えいごで むかしばなし えほん
-will be served at <https://ehon.kengblog.com/> once published.
+will be served at <https://ehon.kengblog.com/> once published, with the
+app's privacy policy at `/privacy` and its support page at `/support`.
 
 It is a plain static site: no framework, no build step, no trackers,
 no web fonts.
@@ -9,6 +10,8 @@ no web fonts.
 ```
 public/
   index.html      landing page
+  privacy.html    privacy policy, served at /privacy
+  support.html    support page, served at /support
   img/*.webp      app screenshots shown in the phone frames
   favicon.svg
   _headers        response headers for Cloudflare static assets
@@ -22,6 +25,12 @@ and meta description in `<head>`. If a change affects text shown in a
 screenshot, replace the matching image in `public/img/` and revise its
 `alt` text as needed. For example, a price change affects the pricing
 paragraph, the `unlock-screen.webp` screenshot, and its `alt` text.
+
+`public/privacy.html` is the public copy of the privacy page shipped
+inside the app. When the app's page changes, carry the same meaning over
+here; only the contact line differs, pointing to support@kengblog.com
+instead of the App Store listing. The page footer links the top page,
+the privacy policy, and the support page; keep it the same on all three.
 
 The two store buttons at the top are for this Japanese–English app.
 Each stays disabled and reads まもなく公開 until the app is listed on
