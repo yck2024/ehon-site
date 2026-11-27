@@ -5,12 +5,11 @@ at <https://ehon.kengblog.com/>. Use its
 [privacy policy](https://ehon.kengblog.com/privacy) and
 [support page](https://ehon.kengblog.com/support) URLs for the App Store listing.
 
-The Taiwan app 日本故事繪本 uses the same two URLs in its App Store
-listing. Its own Traditional Chinese pages are
+The Taiwan app 日本故事繪本 has its own Traditional Chinese pages. Use
 <https://ehon.kengblog.com/zh-hant/privacy> and
-<https://ehon.kengblog.com/zh-hant/support>, and a 繁體中文 link at the top
-of each Japanese page leads to them. There is no Traditional Chinese
-landing page.
+<https://ehon.kengblog.com/zh-hant/support> for its App Store listing.
+A 繁體中文 link at the top of the Japanese privacy and support pages also
+leads to them. There is no Traditional Chinese landing page.
 
 It is a plain static site: no framework, no build step, no trackers,
 no web fonts.
@@ -54,8 +53,7 @@ the email address from `public/support.html` as the public contact
 instead of the App Store listing, on the Traditional Chinese pages too.
 The landing page footer links to both the privacy policy and support;
 each of those pages links to the other in its footer. Each Traditional
-Chinese page links to the other one and to its Japanese page in its
-footer.
+Chinese page links to the other one in its footer.
 
 Keep the App Store button in `public/index.html` disabled until the
 listing is public. Then replace the entire `<button>` with the link
