@@ -66,8 +66,9 @@ app is listed.
 ```
 
 The header icon, browser favicon, iOS Home Screen icon, and share card
-use the app's own icon (`AppIcon-1024.png` in the app project). When the
-app icon changes, refresh all four assets.
+use the Japanese app's icon (`AppIcon-1024.png` in the app project); the
+Traditional Chinese pages share the first three. When that app icon
+changes, refresh all four assets.
 
 ## Preview locally
 
@@ -93,5 +94,5 @@ npx wrangler@4 login     # once, opens the browser
 npx wrangler@4 deploy
 ```
 
-After deploying, open the landing page, privacy policy, and support page,
-and their Traditional Chinese pages, at their public URLs above.
+After deploying, open the landing page, both privacy policies, and both
+support pages at their public URLs above.
