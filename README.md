@@ -26,9 +26,11 @@ wrangler.jsonc    Cloudflare Worker config (static assets + custom domain)
 For the landing page, edit `public/index.html`, including the page title
 and meta description in `<head>`. If a change affects text shown in a
 screenshot, replace the matching image in `public/img/` and revise its
-`alt` text as needed. For example, a price change affects the pricing
-paragraph, the `unlock-screen.webp` screenshot and its `alt` text, and
-the share picture `og-image.jpg` with its `og:image:alt` text.
+`alt` text as needed. For example, when the price changes, update the
+pricing paragraph and unlock screenshot's `alt` text in `public/index.html`,
+replace `public/img/unlock-screen.webp` and `public/img/og-image.jpg`,
+and update `og:image:alt` on all three pages: `public/index.html`,
+`public/support.html`, and `public/privacy.html`.
 
 `public/privacy.html` is the public copy of the privacy page shipped
 inside the app. When the app's page changes, carry the same meaning over
