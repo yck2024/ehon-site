@@ -5,10 +5,22 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>えいごで むかしばなし えほん｜知っている昔ばなしで、英語を聞く。</title>
-<meta name="description" content="桃太郎、かぐや姫、浦島太郎。お子さまがもう知っているお話だから、英語でも「わかる」が続きます。">
+<meta name="description" content="桃太郎、かぐや姫、浦島太郎。お子さまがもう知っているお話を、日本語と英語で楽しめます。">
 <link rel="canonical" href="https://ehon.kengblog.com/">
 <meta name="theme-color" content="#fbf6ec">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:site_name" content="えいごで むかしばなし えほん">
+<meta property="og:title" content="えいごで むかしばなし えほん｜知っている昔ばなしで、英語を聞く。">
+<meta property="og:description" content="桃太郎、かぐや姫、浦島太郎。お子さまがもう知っているお話を、日本語と英語で楽しめます。">
+<meta property="og:url" content="https://ehon.kengblog.com/">
+<meta property="og:image" content="https://ehon.kengblog.com/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="えいごで むかしばなし えほん。知っている昔ばなしで、英語を聞く。日本語と英語のえほん8さつ。桃太郎は無料、のこり7さつは¥800の一度きり。iPhone・iPad向け">
+<meta name="twitter:card" content="summary_large_image">
 <style>
 :root {
   --paper: #fbf6ec;
@@ -44,7 +56,7 @@ p { margin: 0; }
 /* ---------- header ---------- */
 .site-head { padding: 18px 0 0; }
 .brand { display: inline-flex; align-items: center; gap: 10px; font-weight: 700; color: var(--navy); font-size: 18px; }
-.brand svg { width: 36px; height: 36px; border-radius: 9px; flex: none; }
+.brand img { width: 36px; height: 36px; border-radius: 9px; flex: none; }
 
 /* ---------- hero ---------- */
 .hero { position: relative; overflow: hidden; padding: 28px 0 56px; }
@@ -78,6 +90,7 @@ p { margin: 0; }
 .store:disabled { border-style: dashed; cursor: not-allowed; }
 .store b { font-size: 16px; color: var(--ink); }
 .store span { font-size: 13px; }
+.platform { margin-top: 14px; font-size: 15px; color: var(--ink-soft); }
 
 /* ---------- phone frame ---------- */
 .phone {
@@ -162,7 +175,7 @@ section.block.tint { background: var(--paper-2); }
 <header class="site-head">
   <div class="wrap">
     <span class="brand">
-      <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" fill="#26386a"/><circle cx="32" cy="30" r="13" fill="#c9472f"/><path d="M0 44c8-6 16-6 24 0s16 6 24 0 12-5 16-3v23H0z" fill="#fbf6ec"/><path d="M0 52c8-6 16-6 24 0s16 6 24 0 12-5 16-3" fill="none" stroke="#26386a" stroke-width="2.5"/></svg>
+      <img src="/img/app-icon.webp" width="36" height="36" alt="">
       えいごで むかしばなし えほん
     </span>
   </div>
@@ -175,14 +188,14 @@ section.block.tint { background: var(--paper-2); }
     <div class="wrap hero-grid">
       <div>
         <h1>知っている昔ばなしで、<span class="accent">英語を聞く。</span></h1>
-        <p class="lead">桃太郎、かぐや姫、浦島太郎。お子さまがもう知っているお話だから、英語でも「わかる」が続きます。</p>
+        <p class="lead">桃太郎、かぐや姫、浦島太郎。お子さまがもう知っているお話を、日本語と英語で楽しめます。</p>
         <div class="stores">
-          <button class="store" type="button" disabled><b>App Store</b><span>まもなく公開</span></button>
-          <button class="store" type="button" disabled><b>Google Play</b><span>まもなく公開</span></button>
+          <button class="store" type="button" disabled><b>App Store</b><span>審査中</span></button>
         </div>
+        <p class="platform">iPhone・iPad向け。ただいまApp Storeで審査中です。<br>Android版は未公開です。</p>
       </div>
       <div class="phone">
-        <img src="/img/shelf.webp" width="560" height="1218" alt="アプリの本だな画面。桃太郎は無料で、ほかの昔ばなしにはロックがかかっています" fetchpriority="high">
+        <img src="/img/shelf.webp" width="750" height="1626" alt="アプリの本だな画面。桃太郎は無料で、ほかの昔ばなしにはロックがかかっています" fetchpriority="high">
       </div>
     </div>
   </section>
@@ -203,23 +216,23 @@ section.block.tint { background: var(--paper-2); }
           </li>
           <li>
             <h3>おうちの人の声で よむ</h3>
-            <p>「おとなのへや」で、お父さん・お母さんの声を録音できます。寝る前は、いつもの声で。</p>
+            <p>「おとなの へや」で、おうちの人の声を録音できます。寝る前は、いつもの声で。</p>
           </li>
         </ol>
       </div>
       <div class="phone">
-        <img src="/img/book-page.webp" width="560" height="1218" alt="えほんを読む画面。絵の下に日本語と英語の文があり、読み上げボタンがあります" loading="lazy" decoding="async">
+        <img src="/img/book-page.webp" width="750" height="1626" alt="桃太郎を読む画面。絵の下に日本語と英語の文があり、その下に再生ボタンなどの操作ボタンがあります" loading="lazy" decoding="async">
       </div>
     </div>
   </section>
 
-  <!-- ===== えらばれる理由 ===== -->
+  <!-- ===== 親子で楽しめるポイント ===== -->
   <section class="block" id="why" aria-labelledby="why-title">
     <div class="wrap">
-      <h2 id="why-title">えらばれる理由</h2>
+      <h2 id="why-title">親子で楽しめるポイント</h2>
       <ul class="reasons" role="list">
-        <li><strong>知っているお話だから、止まらない。</strong><span>筋を知っているので、英語がわからなくても最後まで聞けます。</span></li>
-        <li><strong>広告なし。</strong><span>お子さまが触っても、知らない画面には行きません。</span></li>
+        <li><strong>知っているお話で、英語にふれる。</strong><span>知っているお話を、日本語と英語で楽しめます。</span></li>
+        <li><strong>広告なし。</strong><span>お話の途中に広告が表示されることはありません。</span></li>
         <li><strong>ネットがなくても読める。</strong><span>車の中でも、帰省先でも。</span></li>
         <li><strong>一度のお買い上げで、ずっと。</strong><span>月額はありません。</span></li>
       </ul>
@@ -234,7 +247,7 @@ section.block.tint { background: var(--paper-2); }
         <p class="price-text"><strong>さいしょの1さつは無料。</strong>ぜんぶで8さつ、<strong>¥800</strong>の一度きりのお買い上げで、のこりの7さつがひらきます。</p>
       </div>
       <div class="phone">
-        <img src="/img/unlock-screen.webp" width="560" height="1218" alt="ぜんぶのえほんをひらく画面。¥800の一度きりのお買い上げと、購入を復元するボタン" loading="lazy" decoding="async">
+        <img src="/img/unlock-screen.webp" width="750" height="1626" alt="「おとなの かたへ」の画面。えらんだ えほんの絵と、「¥800で ぜんぶの えほんを ひらく」ボタン、「購入を 復元する」と「コードを つかう」のボタン" loading="lazy" decoding="async">
       </div>
     </div>
   </section>
@@ -246,15 +259,15 @@ section.block.tint { background: var(--paper-2); }
       <dl class="faq">
         <div>
           <dt>何歳から使えますか。</dt>
-          <dd>読み聞かせができる年齢から。ひとりで触るなら3歳ごろからが目安です。</dd>
+          <dd>親子での読み聞かせにお使いいただけます。お子さまの様子に合わせて、いっしょにお楽しみください。</dd>
         </div>
         <div>
-          <dt>親の英語が苦手でも大丈夫ですか。</dt>
-          <dd>大丈夫です。読み上げはアプリがします。</dd>
+          <dt>英語が苦手な親でも使えますか。</dt>
+          <dd>はい。アプリが日本語と英語で読み上げます。</dd>
         </div>
         <div>
           <dt>買ったあと、機種を変えたら？</dt>
-          <dd>購入時と同じストアで同じアカウントを使っていれば、「購入を復元する」で元に戻せます。</dd>
+          <dd>購入時と同じApple AccountでApp Storeにサインインし、ロック中のえほんから「購入を 復元する」をタップすると、購入済みの7さつを再び読めます。録音や読書の記録は端末内だけに保存されるため、新しい端末には引き継がれません。</dd>
         </div>
       </dl>
     </div>

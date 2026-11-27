@@ -1,7 +1,7 @@
 # ehon-site
 
-This Japanese site for the app えいごで むかしばなし えほん will be served
-at <https://ehon.kengblog.com/> once published. Use its
+This Japanese site for the app えいごで むかしばなし えほん is served
+at <https://ehon.kengblog.com/>. Use its
 [privacy policy](https://ehon.kengblog.com/privacy) and
 [support page](https://ehon.kengblog.com/support) URLs for the App Store listing.
 
@@ -13,36 +13,48 @@ public/
   index.html      landing page
   privacy.html    privacy policy
   support.html    support page
-  img/*.webp      app screenshots shown in the phone frames
-  favicon.svg
+  img/{shelf,book-page,unlock-screen}.webp  app screenshots in the phone frames
+  img/app-icon.webp  decorative header icon
+  img/og-image.jpg   shared 1200×630 link preview image
+  favicon-32.png     browser favicon
+  apple-touch-icon.png  iOS Home Screen bookmark icon
   _headers        response headers for Cloudflare static assets
 wrangler.jsonc    Cloudflare Worker config (static assets + custom domain)
 ```
 
 ## Editing the wording
 
-For the landing page, edit `public/index.html`, including the page title
-and meta description in `<head>`. If a change affects text shown in a
-screenshot, replace the matching image in `public/img/` and revise its
-`alt` text as needed. For example, a price change affects the pricing
-paragraph, the `unlock-screen.webp` screenshot, and its `alt` text.
+When editing `public/index.html`, `public/support.html`, or
+`public/privacy.html`, keep the page's `<title>` and meta description in
+sync with its `og:title` and `og:description`, respectively, in `<head>`.
 
-`public/privacy.html` is the public copy of the privacy page shipped
-inside the app. When the app's page changes, carry the same meaning over
-here, using the email address from `public/support.html` as the public
-contact instead of the App Store listing. The landing page footer links
-to both the privacy policy and support; each of those pages links to the
-other in its footer.
+If a change affects text shown in a screenshot, replace the matching
+image in `public/img/` and revise its `alt` text and dimensions in the
+HTML as needed. For example, when the price changes, update the pricing
+paragraph and unlock screenshot's `alt` text in `public/index.html`,
+replace `public/img/unlock-screen.webp` and `public/img/og-image.jpg`,
+and update `og:image:alt` on all three pages: `public/index.html`,
+`public/support.html`, and `public/privacy.html`.
 
-The two store buttons at the top are for this Japanese–English app.
-Each stays disabled and reads まもなく公開 until the app is listed on
-that store. Replace only that store's entire `<button>` with the matching
-link below, using the published listing URL.
+Keep the public policy in `public/privacy.html` and the in-app policy
+consistent with the app's actual behavior. Use the email address from
+`public/support.html` as the public contact instead of the App Store
+listing. The landing page footer links to both the privacy policy and
+support; each of those pages links to the other in its footer.
+
+Keep the App Store button in `public/index.html` disabled until the
+listing is public. Then replace the entire `<button>` with the link
+below, using the published listing URL, and update the availability
+note below the button. Add a Google Play link only once the Android
+app is listed.
 
 ```html
 <a class="store" href="APP_STORE_URL"><b>App Store</b></a>
-<a class="store" href="GOOGLE_PLAY_URL"><b>Google Play</b></a>
 ```
+
+The header icon, browser favicon, iOS Home Screen icon, and share card
+use the app's own icon (`AppIcon-1024.png` in the app project). When the
+app icon changes, refresh all four assets.
 
 ## Preview locally
 
