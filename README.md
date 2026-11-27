@@ -13,8 +13,10 @@ public/
   index.html      landing page
   privacy.html    privacy policy
   support.html    support page
-  img/*.webp      app screenshots shown in the phone frames
-  favicon.svg
+  img/*.webp      app screenshots shown in the phone frames, and the
+                  app icon shown in the header (app-icon.webp)
+  img/og-image.jpg  1200x630 picture shown when a page is shared
+  favicon-32.png, apple-touch-icon.png   the app icon at browser sizes
   _headers        response headers for Cloudflare static assets
 wrangler.jsonc    Cloudflare Worker config (static assets + custom domain)
 ```
@@ -25,7 +27,8 @@ For the landing page, edit `public/index.html`, including the page title
 and meta description in `<head>`. If a change affects text shown in a
 screenshot, replace the matching image in `public/img/` and revise its
 `alt` text as needed. For example, a price change affects the pricing
-paragraph, the `unlock-screen.webp` screenshot, and its `alt` text.
+paragraph, the `unlock-screen.webp` screenshot and its `alt` text, and
+the share picture `og-image.jpg` with its `og:image:alt` text.
 
 `public/privacy.html` is the public copy of the privacy page shipped
 inside the app. When the app's page changes, carry the same meaning over
@@ -34,15 +37,20 @@ contact instead of the App Store listing. The landing page footer links
 to both the privacy policy and support; each of those pages links to the
 other in its footer.
 
-The two store buttons at the top are for this Japanese–English app.
-Each stays disabled and reads まもなく公開 until the app is listed on
-that store. Replace only that store's entire `<button>` with the matching
-link below, using the published listing URL.
+The App Store button at the top stays disabled and reads 審査中 until
+the app is listed there; the line under it says the app is for
+iPhone・iPad and that the Android version is not released. Once the
+listing is public, replace the entire `<button>` with the link below,
+using the published listing URL, and update that line. Add a Google
+Play link only once the Android app is listed.
 
 ```html
 <a class="store" href="APP_STORE_URL"><b>App Store</b></a>
-<a class="store" href="GOOGLE_PLAY_URL"><b>Google Play</b></a>
 ```
+
+The header icon, favicons and `img/og-image.jpg` are made from the
+app's own icon (`AppIcon-1024.png` in the app project); when the app
+icon changes, export them again.
 
 ## Preview locally
 
